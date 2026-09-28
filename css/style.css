@@ -1,0 +1,55 @@
+/* Estilos do Corpo da Página e Background */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url('../imagens/background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #333; 
+}
+
+/* Estilos do Cabeçalho e Logo */
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#logo-principal {
+    max-height: 50px; 
+    width: auto;
+}
+
+/* Estilos da Área Principal da SPA */
+#app {
+    background-color: rgba(255, 255, 255, 0.95); 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-height: 60vh;
+}
+
+/* Estilos de Botões e Formulários */
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Classes para o feedback de validação */
+.sucesso { color: green; font-weight: bold; }
+.erro { color: red; font-weight: bold; }
