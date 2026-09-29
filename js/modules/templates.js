@@ -11,8 +11,10 @@ export function getFormTemplate() {
     return `
         <h1>Cadastro de Usuário</h1>
         <form id="form-cadastro">
-            <input type="text" id="nome-usuario" placeholder="Digite seu nome">
-            <button type="submit">Salvar no LocalStorage</button>
+            <label for="nome-usuario">Nome do Usuário:</label>
+            <input type="text" id="nome-usuario" name="nome-usuario" placeholder="Digite seu nome" aria-required="true" required>
+            
+            <button type="submit" aria-label="Salvar cadastro de usuário">Salvar no LocalStorage</button>
             <p id="mensagem-feedback"></p>
         </form>
     `;
@@ -23,13 +25,13 @@ export function getListaUsuariosTemplate() {
     // Busca os usuários no localStorage. Se não tiver nada, retorna um array vazio.
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-    // Estrutura HTML inicial
+    // Estrutura HTML inicial (alterado h1 para h2 respeitando a hierarquia semântica)
     let html = `
-        <h1>Usuários Cadastrados</h1>
+        <h2>Usuários Cadastrados</h2>
         <p>Abaixo está a lista de usuários processada dinamicamente:</p>
     `;
 
-    // Verifica se existem usuários e faz a iteração (exatamente o que foi explicado na teoria)
+    // Verifica se existem usuários e faz a iteração
     if (usuarios.length > 0) {
         html += `
             <ul style="margin-top: 20px; list-style-type: square; padding-left: 20px;">

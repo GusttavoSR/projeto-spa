@@ -17,14 +17,15 @@
         <div class="logo-container">
             <img src="../imagens/logo.png" alt="Logotipo do Sistema" id="logo-principal">
         </div>
-        <nav>
+        <!-- Landmark de navegação acessível -->
+        <nav aria-label="Menu de navegação principal">
             <button id="nav-home">Home</button>
             <button id="nav-form">Cadastro</button>
         </nav>
     </header>
 
-    <!-- O conteúdo será injetado nesta div -->
-    <div id="app"></div>
+    <!-- Landmark principal: O conteúdo será injetado nesta tag main em vez de uma div -->
+    <main id="app"></main>
 
     <!-- Linkando o JS principal como módulo -->
     <script type="module" src="../js/main.js"></script>
