@@ -1,7 +1,7 @@
 # Projeto Single Page Application (SPA)
 
 ## 1. Visão Geral do Projeto
-Esta é uma Single Page Application focada no registo e listagem dinâmica de utilizadores. O projeto foi desenvolvido para demonstrar proficiência em manipulação de DOM e arquitetura modular, utilizando estritamente Vanilla JavaScript (ES6 Modules) sem a dependência de frameworks pesadas.
+Esta é uma Single Page Application focada no registo e listagem dinâmica de usuários. O projeto foi desenvolvido para demonstrar proficiência em manipulação de DOM e arquitetura modular, utilizando estritamente Vanilla JavaScript (ES6 Modules) sem a dependência de frameworks pesadas.
 
 ## 2. Tecnologias Utilizadas e Pré-requisitos
 * **Linguagens:** HTML5, CSS3 e JavaScript (ES6+).
