@@ -1,3 +1,35 @@
+/* Variáveis do Modo Claro (Padrão) */
+:root {
+    --cor-fundo: #ffffff;
+    --cor-texto: #333333;
+    --cor-botao: #0056b3;
+    --cor-botao-texto: #ffffff;
+    --cor-erro: #cc0000;
+}
+
+/* Variáveis do Modo Escuro (Alto Contraste) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-fundo: #121212;
+        --cor-texto: #ffffff;
+        --cor-botao: #0056b3;
+        --cor-botao-texto: #ffffff;
+        --cor-erro: #ff6b6b;
+    }
+}
+
+/* Aplicação Global Básica */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: background-color 0.3s ease;
+}
+
+button {
+    background-color: var(--cor-botao);
+    color: var(--cor-botao-texto);
+}
+
 /* Estilos do Corpo da Página e Background */
 body {
     font-family: Arial, sans-serif;
