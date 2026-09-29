@@ -30,7 +30,7 @@ body {
     padding: 20px;
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
-    background-image: url('../imagens/background.jpg');
+    background-image: url('../imagens/background.webp');
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
